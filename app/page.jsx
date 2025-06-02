@@ -1,3 +1,5 @@
+'use client';
+
 export default function Page() {
   return (
     <div className="p-6 max-w-4xl mx-auto font-sans">
@@ -8,7 +10,6 @@ export default function Page() {
       </p>
 
       <div className="space-y-6">
-        {/* Section 1 */}
         <div className="bg-white p-4 shadow rounded-xl">
           <h2 className="text-lg font-semibold text-gray-700 mb-2">1. Package Marking / Etiquetado</h2>
           <label className="flex items-start space-x-3">
@@ -22,7 +23,6 @@ export default function Page() {
           <textarea placeholder="Observations..." className="mt-3 w-full border rounded p-2 text-sm" rows={2}></textarea>
         </div>
 
-        {/* Section 2 */}
         <div className="bg-white p-4 shadow rounded-xl">
           <h2 className="text-lg font-semibold text-gray-700 mb-2">2. Documentation / Documentación</h2>
           <label className="flex items-start space-x-3">
@@ -31,12 +31,11 @@ export default function Page() {
           </label>
           <label className="flex items-start space-x-3 mt-2">
             <input type="checkbox" className="mt-1" />
-            <span>Air waybill with proper DGR handling info / Guía aérea con información de mercancias peligrosas</span>
+            <span>Air waybill with proper DGR handling info / Guía aérea con información de mercancías peligrosas</span>
           </label>
           <textarea placeholder="Observations..." className="mt-3 w-full border rounded p-2 text-sm" rows={2}></textarea>
         </div>
 
-        {/* Submit button */}
         <div className="text-right">
           <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 py-2 rounded-xl">
             Submit Checklist
